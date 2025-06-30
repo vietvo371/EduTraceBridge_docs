@@ -182,7 +182,7 @@ sequenceDiagram
 - Admin documentation
 
 ## 📝 License
-Dự án được phân phối dưới giấy phép [MIT License](LICENSE)
+Dự án được phân phối dưới giấy phép [MIT License](/LICENSE)
 
 ## 🪜 Hệ thống
 Thiết kế theo kiến trúc như hình vẽ bên dưới:
@@ -276,7 +276,7 @@ Xem [CODE_OF_CONDUCT](https://github.com/NguyenThai11103/DTU-Relieflink-document
 
 
 ### 📝 License
-Dự án được phân phối dưới giấy phép [MIT License](https://github.com/NguyenThai11103/DTU-Relieflink-documents/blob/main/LICENSE)
+Dự án được phân phối dưới giấy phép [MIT License](/LICENSE)
 
 
 *"Được phát triển với ❤️ bởi Nhóm DTU-DZ"*

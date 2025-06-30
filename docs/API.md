@@ -50,13 +50,13 @@ Tạo đề thi mới.
 }
 ```
 
-### GET /api/exams/{id}
+### GET /api/exams/:examId
 Lấy thông tin đề thi.
 
-### PUT /api/exams/{id}/publish
+### PUT /api/exams/:examId/publish
 Công bố đề thi.
 
-### POST /api/results/{examId}/grade
+### POST /api/results/:examId/grade
 Chấm điểm bài thi.
 
 ```json
@@ -72,7 +72,7 @@ Chấm điểm bài thi.
 ### GET /api/exams/available
 Lấy danh sách đề thi có thể làm.
 
-### POST /api/exams/{id}/submit
+### POST /api/exams/:examId/submit
 Nộp bài thi.
 
 ```json
@@ -114,10 +114,10 @@ Lấy danh sách giảng viên.
 
 ## 🏢 Nhà tuyển dụng API
 
-### GET /api/certificates/verify/{id}
+### GET /api/certificates/verify/:certificateId
 Xác thực chứng chỉ.
 
-### GET /api/students/{id}/history
+### GET /api/students/:studentId/history
 Xem lịch sử học tập của sinh viên.
 
 ## 🔒 Blockchain API
@@ -231,6 +231,8 @@ const exam = await axios.post('/api/exams', {
   deadline: Date.now() + 86400000
 });
 
+const examId = exam.data.id; // Định nghĩa examId
+
 // 2. Upload lên IPFS
 const ipfs = await axios.post('/api/ipfs/upload', {
   file: exam.data
@@ -238,7 +240,7 @@ const ipfs = await axios.post('/api/ipfs/upload', {
 
 // 3. Mint NFT
 const nft = await axios.post('/api/blockchain/mint-exam', {
-  examId: exam.id,
+  examId: examId,
   ipfsHash: ipfs.hash
 });
 ```
@@ -246,6 +248,9 @@ const nft = await axios.post('/api/blockchain/mint-exam', {
 ### Nộp bài và lưu kết quả
 
 ```javascript
+// 0. Giả sử examId đã được định nghĩa từ response trước đó
+const examId = "example-exam-id"; 
+
 // 1. Nộp bài
 const submission = await axios.post(`/api/exams/${examId}/submit`, {
   answers: [...]

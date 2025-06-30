@@ -3,7 +3,7 @@
 ### *Decentralized Degree & Recruitment Management Platform*
 > *"Connect – Authenticate – Empower"*
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](/LICENSE)
 
 ## 📖 Tổng quan
 
@@ -121,6 +121,6 @@
 
 ## 📝 License
 
-Released under the MIT License – see LICENSE file for details.
+Released under the MIT License – see [LICENSE](/LICENSE) file for details.
 
 © 2025 EduBridgeTrace – Build trust, unlock opportunity.

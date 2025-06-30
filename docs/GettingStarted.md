@@ -2,7 +2,7 @@
 
 > *"Connect – Authenticate – Empower"*
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](../LICENSE)
 [![Open issues](https://img.shields.io/github/issues/ThanhTruong2311/blockchain_dtudz.svg 'Open issues')](https://gitlab.com/ThanhTruong2311/blockchain_dtudz/-/issues)
 [![Open Pull Requests](https://img.shields.io/github/issues-pr/ThanhTruong2311/blockchain_dtudz.svg 'Open Pull Requests')](https://gitlab.com/ThanhTruong2311/blockchain_dtudz/-/merge_requests)
 [![Commit activity](https://img.shields.io/github/commit-activity/m/ThanhTruong2311/blockchain_dtudz.svg 'Commit activity')](https://gitlab.com/ThanhTruong2311/blockchain_dtudz/-/graphs)
@@ -131,7 +131,7 @@ git push origin feat/my-feature
 
 ## 📝 License
 
-Released under the MIT License – see LICENSE file for details.
+Released under the MIT License – see [LICENSE](../LICENSE) file for details.
 
 © 2025 EduBridgeTrace – Build trust, unlock opportunity.
 
