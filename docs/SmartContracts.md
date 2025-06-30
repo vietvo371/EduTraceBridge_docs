@@ -2,58 +2,160 @@
 
 ## 📝 Overview
 
-EduBridgeTrace sử dụng ba smart contract chính để quản lý đề thi, kết quả và chứng chỉ trên blockchain:
+EduBridgeTrace sử dụng các smart contract để quản lý quyền truy cập, đề thi, kết quả và chứng chỉ trên blockchain:
 
-1. ExamNFT
-2. ResultHash
-3. CertificateNFT
+1. DZAccessControl - Quản lý phân quyền và địa chỉ sinh viên
+2. DZBlockChain - Quản lý thông tin blockchain
+3. DZCertificate - Quản lý chứng chỉ
+4. DZExamManager - Quản lý đề thi
+5. DZReviewManager - Quản lý phúc khảo
+6. DZScoreManager - Quản lý điểm số
+7. DZStudentAnswer - Quản lý bài làm sinh viên
+8. DZTestManager - Quản lý bài thi
+9. DZTraceLogger - Ghi log hệ thống
 
-## 🔐 ExamNFT Contract
+## 🔐 DZAccessControl Contract
 
-Contract quản lý đề thi dưới dạng NFT.
+Contract quản lý phân quyền và địa chỉ sinh viên.
 
 ```solidity
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.6;
 
-import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
+import "./Errors.sol";
 
-contract ExamNFT is ERC721, Ownable {
-    struct Exam {
-        string ipfsHash;      // Hash của đề thi trên IPFS
-        uint256 deadline;     // Thời hạn nộp bài
-        bool isPublished;     // Trạng thái công bố
-        address instructor;   // Địa chỉ giảng viên
+abstract contract DZAccessControl {
+    // Mapping quản lý roles
+    mapping(bytes32 => mapping(address => bool)) private _roles;
+    mapping(bytes32 => bytes32) private _roleAdmins;
+
+    // Định nghĩa các role
+    bytes32 public constant DEFAULT_ADMIN_ROLE = 0x00;
+    bytes32 public constant ADMIN_ROLE = keccak256("ADMIN_ROLE");
+    bytes32 public constant LECTURER_ROLE = keccak256("LECTURER_ROLE");
+    bytes32 public constant STUDENT_ROLE = keccak256("STUDENT_ROLE");
+    bytes32 public constant EMPLOYER_ROLE = keccak256("EMPLOYER_ROLE");
+
+    // Mapping quản lý địa chỉ sinh viên
+    mapping(uint256 => address) public studentAddresses;
+    mapping(address => uint256) public addressToStudentId;
+
+    // Events
+    event RoleGranted(bytes32 indexed role, address indexed account, address indexed sender);
+    event RoleRevoked(bytes32 indexed role, address indexed account, address indexed sender);
+    event StudentAddressSet(uint256 indexed student_id, address indexed studentAddress, address setBy);
+    event StudentAddressUpdated(uint256 indexed student_id, address indexed oldAddress, address indexed newAddress, address updatedBy);
+
+    // Modifier kiểm tra quyền
+    modifier onlyRole(bytes32 role) {
+        require(hasRole(role, msg.sender), "Access denied");
+        _;
     }
-    
-    mapping(uint256 => Exam) public exams;
-    uint256 private _tokenIds;
-    
-    constructor() ERC721("ExamNFT", "EXAM") {}
-    
-    function createExam(
-        string memory ipfsHash,
-        uint256 deadline
-    ) public returns (uint256) {
-        _tokenIds++;
-        uint256 newExamId = _tokenIds;
-        
-        _mint(msg.sender, newExamId);
-        
-        exams[newExamId] = Exam({
-            ipfsHash: ipfsHash,
-            deadline: deadline,
-            isPublished: false,
-            instructor: msg.sender
-        });
-        
-        return newExamId;
+
+    // Khởi tạo quyền ban đầu
+    function _initializeAccessControl(address deployer) internal {
+        _grantRole(DEFAULT_ADMIN_ROLE, deployer);
+        _grantRole(ADMIN_ROLE, deployer);
+        _setRoleAdmin(LECTURER_ROLE, ADMIN_ROLE);
+        _setRoleAdmin(STUDENT_ROLE, ADMIN_ROLE);
+        _setRoleAdmin(EMPLOYER_ROLE, ADMIN_ROLE);
     }
-    
-    function publishExam(uint256 examId) public {
-        require(msg.sender == exams[examId].instructor, "Not instructor");
-        exams[examId].isPublished = true;
+
+    // Kiểm tra quyền
+    function hasRole(bytes32 role, address account) public view returns (bool) {
+        return _roles[role][account];
+    }
+
+    // Cấp quyền
+    function _grantRole(bytes32 role, address account) internal {
+        if (!hasRole(role, account)) {
+            _roles[role][account] = true;
+            emit RoleGranted(role, account, msg.sender);
+        }
+    }
+
+    // Thu hồi quyền
+    function _revokeRole(bytes32 role, address account) internal {
+        if (hasRole(role, account)) {
+            _roles[role][account] = false;
+            emit RoleRevoked(role, account, msg.sender);
+        }
+    }
+
+    // Thiết lập admin cho role
+    function _setRoleAdmin(bytes32 role, bytes32 adminRole) internal {
+        _roleAdmins[role] = adminRole;
+    }
+
+    // Các hàm quản lý quyền
+    function grantRole(bytes32 role, address account) public onlyRole(DEFAULT_ADMIN_ROLE) {
+        _grantRole(role, account);
+    }
+
+    function revokeRole(bytes32 role, address account) public onlyRole(DEFAULT_ADMIN_ROLE) {
+        _revokeRole(role, account);
+    }
+
+    // Cấp quyền cho từng role cụ thể
+    function grantLecturerRole(address account) public onlyRole(ADMIN_ROLE) {
+        _grantRole(LECTURER_ROLE, account);
+    }
+
+    function grantStudentRole(address account) public onlyRole(ADMIN_ROLE) {
+        _grantRole(STUDENT_ROLE, account);
+    }
+
+    function grantEmployerRole(address account) public onlyRole(ADMIN_ROLE) {
+        _grantRole(EMPLOYER_ROLE, account);
+    }
+
+    // Thu hồi quyền cho từng role cụ thể
+    function revokeLecturerRole(address account) public onlyRole(ADMIN_ROLE) {
+        _revokeRole(LECTURER_ROLE, account);
+    }
+
+    function revokeStudentRole(address account) public onlyRole(ADMIN_ROLE) {
+        _revokeRole(STUDENT_ROLE, account);
+    }
+
+    function revokeEmployerRole(address account) public onlyRole(ADMIN_ROLE) {
+        _revokeRole(EMPLOYER_ROLE, account);
+    }
+
+    // Quản lý địa chỉ sinh viên
+    function setStudentAddress(uint256 _student_id, address _studentAddress) public onlyRole(ADMIN_ROLE) {
+        if(_student_id == 0) revert Errors.E003();
+        if(_studentAddress == address(0)) revert Errors.E005();
+        if(studentAddresses[_student_id] != address(0)) revert Errors.E203();
+        if(addressToStudentId[_studentAddress] != 0) revert Errors.E202();
+
+        studentAddresses[_student_id] = _studentAddress;
+        addressToStudentId[_studentAddress] = _student_id;
+
+        emit StudentAddressSet(_student_id, _studentAddress, msg.sender);
+    }
+
+    function updateStudentAddress(uint256 _student_id, address _newAddress) public onlyRole(ADMIN_ROLE) {
+        if(_student_id == 0) revert Errors.E003();
+        if(_newAddress == address(0)) revert Errors.E005();
+        if(studentAddresses[_student_id] == address(0)) revert Errors.E201();
+        if(addressToStudentId[_newAddress] != 0) revert Errors.E202();
+
+        address oldAddress = studentAddresses[_student_id];
+        delete addressToStudentId[oldAddress];
+        studentAddresses[_student_id] = _newAddress;
+        addressToStudentId[_newAddress] = _student_id;
+
+        emit StudentAddressUpdated(_student_id, oldAddress, _newAddress, msg.sender);
+    }
+
+    // Truy vấn thông tin sinh viên
+    function getStudentAddress(uint256 _student_id) public view returns (address) {
+        return studentAddresses[_student_id];
+    }
+
+    function getStudentIdByAddress(address _address) public view returns (uint256) {
+        return addressToStudentId[_address];
     }
 }
 ```

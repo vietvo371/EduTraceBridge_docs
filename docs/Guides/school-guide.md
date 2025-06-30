@@ -2,12 +2,87 @@
 
 ## 👋 Giới thiệu
 
-Chào mừng bạn đến với EduBridgeTrace! Hướng dẫn này sẽ giúp bạn:
-- Đảm bảo chất lượng học thuật
-- Kết nối liên trường qua blockchain
-- Quản lý văn bằng và chứng chỉ số
+Chào mừng bạn đến với EduBridgeTrace! Đây là nền tảng quản lý học tập và chứng chỉ trên blockchain dành cho nhà trường.
 
-## 🔑 Tài khoản Demo
+## 🚀 Đăng nhập và Sử dụng Hệ thống
+
+### 1. Đăng nhập
+
+
+- Truy cập đường dẫn: https://vietchain.dzfullstack.edu.vn/school/login
+- Nhập thông tin đăng nhập:
+  - Email: email quản trị viên
+  - Password: mật khẩu của bạn
+- Nhấn nút "Login" để đăng nhập vào hệ thống
+
+### 2. Giao diện Dashboard
+
+![Dashboard](/img/school-guide/dashboard.png)
+
+Sau khi đăng nhập thành công, bạn sẽ thấy màn hình Dashboard với tổng quan về hoạt động của trường.
+
+### 3. Menu Điều Hướng Chính
+
+![Menu điều hướng](/img/school-guide/navigation.png)
+
+#### Dashboard
+- Xem tổng quan hoạt động của trường
+- Theo dõi các chỉ số quan trọng
+- Truy cập nhanh các chức năng chính
+
+#### General Management (Quản lý Chung)
+
+![Quản lý chung](/img/school-guide/general-management.png)
+
+1. **Subject Management**
+   - Quản lý danh sách môn học
+   - Cập nhật thông tin môn học
+   - Thiết lập yêu cầu và điều kiện
+
+2. **Classroom Management**
+   - Quản lý các lớp học
+   - Phân công giảng viên
+   - Theo dõi tiến độ giảng dạy
+
+3. **Lecturers Management**
+   - Quản lý thông tin giảng viên
+   - Phân công giảng dạy
+   - Đánh giá hiệu quả
+
+4. **Transfer of Courses**
+   - Quản lý chuyển đổi môn học
+   - Xét duyệt tương đương tín chỉ
+   - Theo dõi quá trình chuyển đổi
+
+#### Students Management (Quản lý Sinh viên)
+
+![Quản lý sinh viên](/img/school-guide/students-management.png)
+
+1. **List of Students**
+   - Xem danh sách sinh viên
+   - Quản lý hồ sơ sinh viên
+   - Theo dõi tiến độ học tập
+
+2. **Student Certificate**
+   - Kiểm tra chứng chỉ sinh viên
+   - Xác thực và phê duyệt
+   - Quản lý cấp phát chứng chỉ
+
+#### Tests Management (Quản lý Bài Kiểm tra)
+
+![Quản lý bài kiểm tra](/img/school-guide/tests-management.png)
+
+1. **List of Tests**
+   - Xem danh sách các kỳ thi
+   - Lập lịch thi
+   - Theo dõi tiến trình thi
+
+2. **Exams Management**
+   - Quản lý đề thi
+   - Phê duyệt nội dung
+   - Theo dõi kết quả
+
+## 🔑 Tài Khoản Demo (Dùng để test)
 
 ### Tài khoản 1
 - Email: admin@dtu.edu.vn
@@ -17,116 +92,14 @@ Chào mừng bạn đến với EduBridgeTrace! Hướng dẫn này sẽ giúp b
 - Email: admin@uet.vnu.edu.vn
 - Password: 123456
 
-## 🚀 Bắt đầu sử dụng
+## 🤝 Hỗ trợ và Liên Hệ
 
-### 1. Thiết lập tài khoản
-- Truy cập: https://vietchain.dzfullstack.edu.vn
-- Đăng ký tài khoản trường
-- Xác minh thông tin pháp lý
-- Nhận quyền quản trị hệ thống
-
-### 2. Cấu hình blockchain
-- Tạo ví đa chữ ký (multi-sig)
-- Thiết lập smart contracts
-- Kết nối với mạng Polygon
-
-## 👥 Quản lý người dùng
-
-### 1. Quản lý giảng viên
-- Tạo tài khoản giảng viên
-- Phân quyền theo bộ môn
-- Theo dõi hoạt động
-
-### 2. Quản lý sinh viên
-- Import danh sách sinh viên
-- Cấp tài khoản tự động
-- Quản lý thông tin học tập
-
-## 📜 Quản lý văn bằng
-
-### 1. Phát hành văn bằng
-- Tạo mẫu văn bằng số
-- Phát hành trên blockchain
-- Quản lý phiên bản
-
-### 2. Xác thực văn bằng
-- Kiểm tra tính xác thực
-- Xem lịch sử thay đổi
-- Phát hiện gian lận
-
-### 3. Chia sẻ dữ liệu
-- Kết nối với trường khác
-- Chia sẻ thông tin học phần
-- Đồng bộ credits
-
-## 🎓 Quản lý học thuật
-
-### 1. Theo dõi chất lượng
-- Đánh giá kết quả học tập
-- Phân tích xu hướng
-- Báo cáo định kỳ
-
-### 2. Kiểm định chất lượng
-- Đánh giá chương trình
-- Thu thập feedback
-- Cải thiện liên tục
-
-## 🤝 Liên kết trường
-
-### 1. Tham gia mạng lưới
-- Kết nối với trường đối tác
-- Chia sẻ tài nguyên
-- Trao đổi sinh viên
-
-### 2. Chuyển đổi tín chỉ
-- Xác thực học phần
-- Chuyển đổi điểm số
-- Công nhận kết quả
-
-## 📊 Báo cáo & Thống kê
-
-### 1. Báo cáo học thuật
-- Thống kê kết quả học tập
-- Phân tích tiến độ
-- Dự báo xu hướng
-
-### 2. Báo cáo hệ thống
-- Theo dõi hoạt động
-- Phân tích hiệu suất
-- Đánh giá bảo mật
-
-## 🔐 Bảo mật
-
-### Quản lý quyền truy cập
-- Phân quyền chi tiết
-- Giám sát hoạt động
-- Audit logs
-
-### Bảo vệ dữ liệu
-- Mã hóa thông tin
-- Backup định kỳ
-- Phục hồi sự cố
-
-## 🤝 Hỗ trợ
-
-### Liên hệ
+### Kênh hỗ trợ
 - Email: nguyenquoclongdng@gmail.com
 - Hotline: 0905523543
 - Live chat trên website
 
-### Tài liệu
-- Hướng dẫn quản trị
-- Video tutorial
-- FAQ
-
-## 💡 Tips
-
-1. Quản lý hệ thống
-- Backup dữ liệu thường xuyên
-- Cập nhật phần mềm định kỳ
-- Đào tạo người dùng
-
-2. Tối ưu quy trình
-- Tự động hóa tác vụ
-- Chuẩn hóa quy trình
-- Thu thập feedback 
+### Tài nguyên
+- Video hướng dẫn sử dụng
+- Câu hỏi thường gặp (FAQ)
+- Tài liệu tham khảo chi tiết 

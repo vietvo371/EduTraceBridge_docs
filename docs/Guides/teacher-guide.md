@@ -2,12 +2,72 @@
 
 ## 👋 Giới thiệu
 
-Chào mừng bạn đến với EduBridgeTrace! Hướng dẫn này sẽ giúp bạn:
-- Phát hành và xác minh chứng chỉ trên blockchain
-- Quản lý kết quả học tập của sinh viên
-- Xác nhận thành tích và kỹ năng
+Chào mừng bạn đến với EduBridgeTrace! Đây là nền tảng quản lý học tập và chứng chỉ trên blockchain dành cho giảng viên.
 
-## 🔑 Tài khoản Demo
+## 🚀 Đăng nhập và Sử dụng Hệ thống
+
+### 1. Đăng nhập
+
+
+- Truy cập đường dẫn: https://vietchain.dzfullstack.edu.vn/lecturer/login
+- Nhập thông tin đăng nhập:
+  - Email: email do trường cấp
+  - Password: mật khẩu của bạn
+- Nhấn nút "Login" để đăng nhập vào hệ thống
+
+### 2. Giao diện Dashboard
+
+![Dashboard](/img/teacher-guide/dashboard.png)
+
+Sau khi đăng nhập thành công, bạn sẽ thấy màn hình Dashboard với các chức năng:
+
+#### Menu Điều Hướng Chính
+
+![Menu điều hướng](/img/teacher-guide/navigation.png)
+
+- **Dashboard**: Tổng quan về các lớp học và hoạt động
+- **Manage Class**: Quản lý lớp học và sinh viên
+- **Create Test**: Tạo và quản lý bài kiểm tra
+- **Scoring**: Chấm điểm và đánh giá
+- **Grade Reassessment**: Xem xét lại điểm số
+
+### 3. Các Tính Năng Chính
+
+#### Quản lý Lớp Học (Manage Class)
+
+![Quản lý lớp học](/img/teacher-guide/manage-class.png)
+
+- Xem danh sách lớp học đang phụ trách
+- Quản lý danh sách sinh viên
+- Theo dõi tiến độ và hoạt động của lớp
+- Tạo thông báo và tài liệu học tập
+
+#### Tạo Bài Kiểm Tra (Create Test)
+
+![Tạo bài kiểm tra](/img/teacher-guide/create-test.png)
+
+- Tạo đề thi mới
+- Thiết lập thời gian và quy định thi
+- Quản lý ngân hàng câu hỏi
+- Tùy chỉnh cấu trúc đề thi
+
+#### Chấm Điểm (Scoring)
+
+![Chấm điểm](/img/teacher-guide/scoring.png)
+
+- Chấm điểm bài kiểm tra
+- Nhập điểm thành phần
+- Tính toán điểm tổng kết
+- Xuất báo cáo điểm số
+
+#### Xem Xét Lại Điểm (Grade Reassessment)
+
+- Xem yêu cầu phúc khảo
+- Đánh giá lại bài làm
+- Cập nhật điểm số
+- Phản hồi cho sinh viên
+
+## 🔑 Tài Khoản Demo (Dùng để test)
 
 ### Tài khoản 1
 - Email: nguyenquoclong@dtu.edu.vn
@@ -17,103 +77,14 @@ Chào mừng bạn đến với EduBridgeTrace! Hướng dẫn này sẽ giúp b
 - Email: lehoangnam@hust.edu.vn
 - Password: 123456
 
-## 🚀 Bắt đầu sử dụng
+## 🤝 Hỗ trợ và Liên Hệ
 
-### 1. Đăng nhập hệ thống
-- Truy cập: https://vietchain.dzfullstack.edu.vn
-- Đăng nhập với tài khoản trường cấp
-- Kết nối ví MetaMask
-
-### 2. Thiết lập ví MetaMask
-- Cài đặt MetaMask extension
-- Tạo hoặc import ví
-- Kết nối với Polygon Mumbai testnet
-
-## 📝 Quản lý chứng chỉ
-
-### 1. Phát hành chứng chỉ NFT
-- Chọn mẫu chứng chỉ
-- Nhập thông tin sinh viên
-- Xác nhận trên blockchain
-- Theo dõi trạng thái phát hành
-
-### 2. Xác minh chứng chỉ
-- Quét mã QR hoặc nhập mã
-- Kiểm tra tính xác thực
-- Xem lịch sử chứng chỉ
-
-### 3. Quản lý template
-- Tạo mẫu chứng chỉ mới
-- Tùy chỉnh thông tin hiển thị
-- Lưu trữ trên IPFS
-
-## 📊 Quản lý kết quả học tập
-
-### 1. Nhập điểm và đánh giá
-- Nhập điểm số chi tiết
-- Thêm nhận xét đánh giá
-- Xác nhận kết quả cuối cùng
-
-### 2. Xem tiến độ lớp học
-- Thống kê điểm số
-- Theo dõi hoàn thành môn học
-- Xuất báo cáo tổng hợp
-
-### 3. Phê duyệt yêu cầu
-- Xem yêu cầu xác nhận kỹ năng
-- Đánh giá portfolio
-- Phê duyệt/từ chối yêu cầu
-
-## 🔍 Xác thực thông tin
-
-### 1. Xác minh kỹ năng
-- Đánh giá năng lực thực tế
-- Ghi nhận trên blockchain
-- Cập nhật hồ sơ sinh viên
-
-### 2. Xác nhận kinh nghiệm
-- Xác thực dự án đã làm
-- Đánh giá mức độ tham gia
-- Lưu trữ bằng chứng
-
-## 📱 Mobile App
-
-- Tải app từ App Store/Google Play
-- Đăng nhập với tài khoản hiện có
-- Phát hành và xác minh chứng chỉ
-
-## 🔐 Bảo mật
-
-### Quản lý private key
-- Bảo vệ private key
-- Backup ví MetaMask
-- Không chia sẻ thông tin nhạy cảm
-
-### Quyền hạn
-- Phân quyền theo môn học
-- Giới hạn thời gian truy cập
-- Audit log hoạt động
-
-## 🤝 Hỗ trợ
-
-### Liên hệ
+### Kênh hỗ trợ
 - Email: nguyenquoclongdng@gmail.com
 - Hotline: 0905523543
 - Live chat trên website
 
-### FAQ
-- Xem câu hỏi thường gặp
-- Video hướng dẫn
-- Tài liệu chi tiết
-
-## 💡 Tips
-
-1. Phát hành chứng chỉ
-- Kiểm tra kỹ thông tin
-- Sử dụng template chuẩn
-- Lưu trữ metadata đầy đủ
-
-2. Xác minh thông tin
-- Thu thập đủ bằng chứng
-- Ghi chú chi tiết đánh giá
-- Lưu trữ tài liệu liên quan 
+### Tài nguyên
+- Video hướng dẫn sử dụng
+- Câu hỏi thường gặp (FAQ)
+- Tài liệu tham khảo chi tiết 
