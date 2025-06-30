@@ -4,163 +4,100 @@
 
 EduBridgeTrace được thiết kế theo mô hình đa tầng, kết hợp công nghệ Web2 và Web3 để xây dựng một hệ sinh thái chứng nhận học thuật và tuyển dụng hoàn chỉnh.
 
-## 🔄 Luồng dữ liệu
-
-```mermaid
-sequenceDiagram
-    participant UI as Frontend (Vue)
-    participant MM as MetaMask
-    participant BE as Backend API
-    participant RDS as MySQL
-    participant RS as Redis
-    participant ETH as Ethereum
-    participant S3 as AWS S3
-    participant IPFS as IPFS/Filecoin
-
-    Note over UI,IPFS: Login & Data Management Flow
-    UI->>BE: Login / CRUD (HTTPS)
-    BE->>RS: Check session cache
-    RS-->>BE: Cache hit/miss
-    BE->>RDS: SQL Query (if cache miss)
-    RDS-->>BE: User data
-    BE-->>UI: JSON Response
-
-    Note over UI,IPFS: Degree Issuance Flow (NFT)
-    UI->>MM: Request to sign NFT degree transaction
-    MM->>UI: User confirmation
-    MM->>ETH: Send transaction to blockchain
-    ETH-->>MM: Transaction receipt & event logs
-    MM-->>UI: Transaction result success/failure
-
-    Note over UI,IPFS: File & Metadata Storage Flow
-    UI->>BE: Upload CV, certificate, avatar
-    BE->>S3: Store static files with IAM security
-    S3-->>BE: File URL & metadata
-    BE->>IPFS: Pin degree metadata via Pinata
-    IPFS-->>BE: Immutable IPFS hash
-    BE->>RDS: Save IPFS hash in database
-    BE-->>UI: Upload complete
-
-    Note over UI,IPFS: Degree Verification Flow
-    UI->>BE: Request degree verification
-    BE->>ETH: Query smart contract by token ID
-    ETH-->>BE: NFT & owner address info
-    BE->>IPFS: Fetch metadata from IPFS hash
-    IPFS-->>BE: Degree details (JSON)
-    BE-->>UI: Verification result + metadata
-```
-
 ## 🔄 Chi tiết các luồng xử lý
 
 ### 1. Luồng đăng nhập & quản lý dữ liệu
-- UI->BE: Login / CRUD (HTTPS)
-- BE->RS: Kiểm tra cache phiên
-- RS->BE: Cache hit/miss
-- BE->RDS: Truy vấn SQL (nếu cache miss)
-- RDS->BE: Dữ liệu người dùng
-- BE->UI: Phản hồi JSON
+
+| Bước | Từ | Đến | Hoạt động |
+|------|----|----|-----------|
+| 1 | Frontend | Backend | Gửi yêu cầu Login/CRUD qua HTTPS |
+| 2 | Backend | Redis | Kiểm tra cache phiên |
+| 3 | Redis | Backend | Trả về kết quả cache hit/miss |
+| 4 | Backend | MySQL | Truy vấn SQL (nếu cache miss) |
+| 5 | MySQL | Backend | Trả về dữ liệu người dùng |
+| 6 | Backend | Frontend | Trả về phản hồi JSON |
 
 ### 2. Luồng phát hành bằng cấp (NFT)
-- UI->MM: Yêu cầu ký giao dịch NFT
-- MM->UI: Xác nhận từ người dùng
-- MM->ETH: Gửi giao dịch lên blockchain
-- ETH->MM: Biên nhận giao dịch & log sự kiện
-- MM->UI: Kết quả giao dịch thành công/thất bại
+
+| Bước | Từ | Đến | Hoạt động |
+|------|----|----|-----------|
+| 1 | Frontend | MetaMask | Yêu cầu ký giao dịch NFT |
+| 2 | MetaMask | Frontend | Hiển thị xác nhận từ người dùng |
+| 3 | MetaMask | Ethereum | Gửi giao dịch lên blockchain |
+| 4 | Ethereum | MetaMask | Trả về biên nhận và log sự kiện |
+| 5 | MetaMask | Frontend | Thông báo kết quả thành công/thất bại |
 
 ### 3. Luồng lưu trữ file & metadata
-- UI->BE: Upload CV, chứng chỉ, avatar
-- BE->S3: Lưu file tĩnh với bảo mật IAM
-- S3->BE: URL file & metadata
-- BE->IPFS: Pin metadata bằng cấp qua Pinata
-- IPFS->BE: Hash IPFS bất biến
-- BE->RDS: Lưu hash IPFS vào database
-- BE->UI: Hoàn tất upload
+
+| Bước | Từ | Đến | Hoạt động |
+|------|----|----|-----------|
+| 1 | Frontend | Backend | Upload file (CV, chứng chỉ, avatar) |
+| 2 | Backend | AWS S3 | Lưu file tĩnh với bảo mật IAM |
+| 3 | AWS S3 | Backend | Trả về URL và metadata của file |
+| 4 | Backend | IPFS | Pin metadata qua Pinata |
+| 5 | IPFS | Backend | Trả về hash bất biến |
+| 6 | Backend | MySQL | Lưu hash vào database |
+| 7 | Backend | Frontend | Thông báo hoàn tất upload |
 
 ### 4. Luồng xác thực bằng cấp
-- UI->BE: Yêu cầu xác thực bằng cấp
-- BE->ETH: Truy vấn smart contract bằng token ID
-- ETH->BE: Thông tin NFT & địa chỉ chủ sở hữu
-- BE->IPFS: Lấy metadata từ hash IPFS
-- IPFS->BE: Chi tiết bằng cấp (JSON)
-- BE->UI: Kết quả xác thực + metadata
+
+| Bước | Từ | Đến | Hoạt động |
+|------|----|----|-----------|
+| 1 | Frontend | Backend | Gửi yêu cầu xác thực bằng cấp |
+| 2 | Backend | Ethereum | Truy vấn smart contract bằng token ID |
+| 3 | Ethereum | Backend | Trả về thông tin NFT và chủ sở hữu |
+| 4 | Backend | IPFS | Lấy metadata từ hash |
+| 5 | IPFS | Backend | Trả về chi tiết bằng cấp (JSON) |
+| 6 | Backend | Frontend | Trả kết quả xác thực + metadata |
 
 ## 🔧 Các thành phần chính
 
-### 1. Frontend Layer
-- **Framework**: Vue 3
-- **UI Framework**: Bootstrap 5
-- **Features**:
-  - SPA interface cho 3 loại người dùng
-  - Responsive design
-  - Web3 integration
+### Frontend Layer (Vue.js)
+- Giao diện người dùng
+- Tương tác Web3
+- Responsive design
 
-### 2. Web3 Gateway
-- **Libraries**: web3.js / ethers.js
-- **Wallet**: MetaMask integration
-- **Features**:
-  - Ký và gửi giao dịch
-  - Đọc dữ liệu blockchain
-  - Quản lý private key
+### Backend Layer (Laravel)
+- REST API
+- Business logic
+- Authentication
 
-### 3. Cache Layer
-- **Service**: AWS ElastiCache (Redis)
-- **Usage**:
-  - Key-value store
-  - Session storage
-  - Pub/sub messaging
-  - Cache query results
+### Cache Layer (Redis)
+- Session storage
+- Query cache
+- Pub/sub messaging
 
-### 4. Backend Layer
-- **Framework**: Laravel
-- **Server**: Apache/Nginx
-- **Features**:
-  - REST/GraphQL API
-  - Business logic
-  - Queue workers
-  - Authentication
+### Database Layer (MySQL)
+- Data persistence
+- ACID transactions
+- Backup/restore
 
-### 5. Database Layer
-- **Service**: AWS RDS (MySQL 8)
-- **Features**:
-  - Relational data storage
-  - Automated backups
-  - Multi-AZ deployment
-  - High availability
+### Storage Layer (AWS S3)
+- File storage
+- CDN delivery
+- Version control
 
-### 6. Object Storage
-- **Service**: AWS S3
-- **Usage**:
-  - Static frontend files
-  - User uploads (CV, media)
-  - IAM security
-  - Versioning support
+### Blockchain Layer (Ethereum)
+- Smart contracts
+- NFT management
+- Transaction handling
 
-### 7. Blockchain Layer
-- **Platform**: Ethereum & Testnet
-- **Contracts**:
-  - NFT-degree contract
-  - Utility token contract
-- **Framework**: OpenZeppelin
+### Distributed Storage (IPFS/Filecoin)
+- Metadata storage
+- Content addressing
+- Data immutability
 
-### 8. Distributed Storage
-- **Primary**: IPFS + Pinata
-- **Secondary**: Filecoin
-- **Features**:
-  - Immutable storage
-  - Content addressing
-  - CDN gateway
-  - Long-term archival
+## 📚 Tài liệu kỹ thuật
 
-## ⚙️ System Requirements
-
-| Software     | Minimum Version       |
-| ------------ | --------------------- |
-| **Laravel**   | 12x                  |
-| **Node.js**  | >=6.0.0              |
-| **Npm**      | 10.9.2               |
-| **MetaMask** | 11.x (Chrome/Firefox)|
-| **Axios**    | 1.8.2                |
-| **Vite**     | 6.2.4                |
+### System Requirements
+| Software | Minimum Version |
+|----------|----------------|
+| Laravel | 12x |
+| Node.js | >=6.0.0 |
+| Npm | 10.9.2 |
+| MetaMask | 11.x |
+| Axios | 1.8.2 |
+| Vite | 6.2.4 |
 
 ## 🔐 Bảo mật
 
