@@ -1,10 +1,10 @@
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
 - jekyll-remote-theme
-title: RELIEFLINK
-description: Ứng dụng hỗ trợ cứu nạn khẩn cấp và quản lý nguồn lực
+title: EduTraceBridge
+description: Blockchain-based education verification system
 show_downloads: true
 github:
-  zip_url: https://github.com/olp-dtu-2024/DTU-GreenHope/zipball/main
-  tar_url: https://github.com/olp-dtu-2024/DTU-GreenHope/tarball/main
-  repository_url: https://github.com/olp-dtu-2024/DTU-GreenHope 
+  zip_url: https://github.com/vietvo371/EduTraceBridge_docs/zipball/main
+  tar_url: https://github.com/vietvo371/EduTraceBridge_docs/tarball/main
+  repository_url: https://github.com/vietvo371/EduTraceBridge_docs 

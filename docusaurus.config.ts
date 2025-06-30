@@ -4,17 +4,17 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'EduTraceBridge',
-  tagline: 'EduTraceBridge',
+  tagline: 'Blockchain-based Education Verification Platform',
   favicon: 'img/favicon.ico',
-  url: 'http://localhost:3000',
+  url: 'https://edutracebridge.com',
   baseUrl: '/',
-  organizationName: 'EduTraceBridge',
-  projectName: 'edutrace-bridge',
+  organizationName: 'ThanhTruong2311',
+  projectName: 'blockchain_dtudz',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'vi',
+    locales: ['vi'],
   }, 
   presets: [
     [
@@ -22,8 +22,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl:
-            'https://github.com/NguyenThai11103/EduTraceBridge-documents',
+          editUrl: 'https://gitlab.com/ThanhTruong2311/blockchain_dtudz/edit/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -35,23 +34,76 @@ const config: Config = {
   themeConfig: {
     image: 'img/EduTraceBridge.png',
     navbar: {
+      title: 'EduTraceBridge',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/Relieflink.png',
+        alt: 'EduTraceBridge Logo',
+        src: 'img/EduTraceBridge.png',
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
-        {
-          href: 'https://github.com/NguyenThai11103/DTU-Relieflink-documents',
-          label: 'GitHub',
+          type: 'localeDropdown',
           position: 'right',
         },
+        {
+          href: 'https://gitlab.com/ThanhTruong2311/blockchain_dtudz',
+          position: 'right',
+          className: 'header-gitlab-link',
+          'aria-label': 'GitLab repository',
+        },
       ],
+    },
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: 'Docs',
+          items: [
+            {
+              label: 'Getting Started',
+              to: '/docs/intro',
+            },
+            {
+              label: 'Architecture',
+              to: '/docs/Architecture',
+            },
+            {
+              label: 'Installation',
+              to: '/docs/Installation',
+            },
+          ],
+        },
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'GitLab',
+              href: 'https://gitlab.com/ThanhTruong2311/blockchain_dtudz',
+            },
+            {
+              label: 'Issues',
+              href: 'https://gitlab.com/ThanhTruong2311/blockchain_dtudz/-/issues',
+            },
+          ],
+        },
+        {
+          title: 'Team',
+          items: [
+            {
+              label: 'Nguyễn Quốc Long',
+              href: 'mailto:quoclongdng@gmail.com',
+            },
+            {
+              label: 'Lê Thanh Trường',
+              href: 'mailto:thanhtruong23111999@gmail.com',
+            },
+            {
+              label: 'Võ Văn Việt',
+              href: 'mailto:vietvo371@gmail.com',
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} EduTraceBridge. Built with ❤️ by DTU-DZ Team.`,
     },
     prism: {
       theme: prismThemes.github,

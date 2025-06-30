@@ -9,6 +9,11 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'doc',
+      id: 'GettingStarted',
+      label: '📝 Tổng quan',
+    },
+    {
+      type: 'doc',
       id: 'Architecture',
       label: '🏗️ Kiến trúc hệ thống',
     },
@@ -21,16 +26,6 @@ const sidebars: SidebarsConfig = {
       type: 'doc',
       id: 'SmartContracts',
       label: '📝 Smart Contracts',
-    },
-    {
-      type: 'doc',
-      id: 'API',
-      label: '🔌 API Documentation',
-    },
-    {
-      type: 'doc',
-      id: 'Database',
-      label: '💾 Database Schema',
     },
     {
       type: 'category',

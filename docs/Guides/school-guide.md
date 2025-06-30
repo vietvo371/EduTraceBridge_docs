@@ -2,115 +2,131 @@
 
 ## 👋 Giới thiệu
 
-Chào mừng bạn đến với EduTraceBridge! Hướng dẫn này sẽ giúp bạn:
-- Quản lý giảng viên và sinh viên
-- Duyệt và quản lý đề thi
-- Cấp chứng chỉ NFT
-- Quản lý hệ thống học tập
+Chào mừng bạn đến với EduBridgeTrace! Hướng dẫn này sẽ giúp bạn:
+- Đảm bảo chất lượng học thuật
+- Kết nối liên trường qua blockchain
+- Quản lý văn bằng và chứng chỉ số
 
-## 🔑 Thiết lập ban đầu
+## 🔑 Tài khoản Demo
 
-### 1. Cài đặt hệ thống
-- Tạo tài khoản admin
-- Cấu hình thông tin trường
-- Thiết lập smart contract
-- Kết nối ví đa chữ ký
+### Tài khoản 1
+- Email: admin@dtu.edu.vn
+- Password: 123456
 
-### 2. Quản lý người dùng
+### Tài khoản 2
+- Email: admin@uet.vnu.edu.vn
+- Password: 123456
+
+## 🚀 Bắt đầu sử dụng
+
+### 1. Thiết lập tài khoản
+- Truy cập: https://vietchain.dzfullstack.edu.vn
+- Đăng ký tài khoản trường
+- Xác minh thông tin pháp lý
+- Nhận quyền quản trị hệ thống
+
+### 2. Cấu hình blockchain
+- Tạo ví đa chữ ký (multi-sig)
+- Thiết lập smart contracts
+- Kết nối với mạng Polygon
+
+## 👥 Quản lý người dùng
+
+### 1. Quản lý giảng viên
 - Tạo tài khoản giảng viên
+- Phân quyền theo bộ môn
+- Theo dõi hoạt động
+
+### 2. Quản lý sinh viên
 - Import danh sách sinh viên
-- Phân quyền người dùng
-- Quản lý khoa/bộ môn
+- Cấp tài khoản tự động
+- Quản lý thông tin học tập
 
-## 👨‍🏫 Quản lý giảng viên
+## 📜 Quản lý văn bằng
 
-### 1. Thêm giảng viên mới
-- Tạo tài khoản
-- Cấp quyền truy cập
-- Gán môn học/lớp học
+### 1. Phát hành văn bằng
+- Tạo mẫu văn bằng số
+- Phát hành trên blockchain
+- Quản lý phiên bản
 
-### 2. Phân công giảng dạy
-- Lập kế hoạch giảng dạy
-- Phân công môn học
-- Quản lý lịch thi
+### 2. Xác thực văn bằng
+- Kiểm tra tính xác thực
+- Xem lịch sử thay đổi
+- Phát hiện gian lận
 
-## 👨‍🎓 Quản lý sinh viên
+### 3. Chia sẻ dữ liệu
+- Kết nối với trường khác
+- Chia sẻ thông tin học phần
+- Đồng bộ credits
 
-### 1. Quản lý hồ sơ
-- Import danh sách sinh viên
-- Cập nhật thông tin
-- Theo dõi tiến độ học tập
+## 🎓 Quản lý học thuật
 
-### 2. Quản lý lớp học
-- Tạo lớp mới
-- Thêm sinh viên vào lớp
-- Theo dõi điểm danh
+### 1. Theo dõi chất lượng
+- Đánh giá kết quả học tập
+- Phân tích xu hướng
+- Báo cáo định kỳ
 
-## 📝 Quản lý đề thi
+### 2. Kiểm định chất lượng
+- Đánh giá chương trình
+- Thu thập feedback
+- Cải thiện liên tục
 
-### 1. Duyệt đề thi
-- Xem danh sách đề thi
-- Kiểm tra nội dung
-- Phê duyệt/từ chối
-- Xác nhận trên blockchain
+## 🤝 Liên kết trường
 
-### 2. Quản lý kỳ thi
-- Lập lịch thi
-- Phân công giám thị
-- Theo dõi tiến trình
+### 1. Tham gia mạng lưới
+- Kết nối với trường đối tác
+- Chia sẻ tài nguyên
+- Trao đổi sinh viên
 
-## 🎓 Cấp chứng chỉ
-
-### 1. Xét duyệt chứng chỉ
-- Kiểm tra điều kiện
-- Xác nhận kết quả
-- Phê duyệt cấp chứng chỉ
-
-### 2. Mint NFT
-- Tạo chứng chỉ NFT
-- Cấp cho sinh viên
-- Lưu trữ trên blockchain
+### 2. Chuyển đổi tín chỉ
+- Xác thực học phần
+- Chuyển đổi điểm số
+- Công nhận kết quả
 
 ## 📊 Báo cáo & Thống kê
 
-### 1. Báo cáo học tập
-- Thống kê điểm số
-- Tỷ lệ đậu/rớt
-- Phân tích xu hướng
+### 1. Báo cáo học thuật
+- Thống kê kết quả học tập
+- Phân tích tiến độ
+- Dự báo xu hướng
 
 ### 2. Báo cáo hệ thống
-- Số lượng đề thi
-- Số chứng chỉ đã cấp
-- Hoạt động blockchain
+- Theo dõi hoạt động
+- Phân tích hiệu suất
+- Đánh giá bảo mật
 
-## ⚙️ Cấu hình hệ thống
+## 🔐 Bảo mật
 
-### 1. Cài đặt chung
-- Thông tin trường
-- Logo và branding
-- Cấu hình email
-
-### 2. Bảo mật
-- Quản lý quyền truy cập
+### Quản lý quyền truy cập
+- Phân quyền chi tiết
+- Giám sát hoạt động
 - Audit logs
-- Backup dữ liệu
 
-## 🔔 Thông báo
-
-- Quản lý thông báo:
-  - Lịch thi
-  - Kết quả học tập
-  - Cấp chứng chỉ
-  - Thông báo hệ thống
+### Bảo vệ dữ liệu
+- Mã hóa thông tin
+- Backup định kỳ
+- Phục hồi sự cố
 
 ## 🤝 Hỗ trợ
 
 ### Liên hệ
-- Email: support@edutracebridge.com
-- Hotline: 1900-xxxx
+- Email: nguyenquoclongdng@gmail.com
+- Hotline: 0708585120
 - Live chat trên website
 
 ### Tài liệu
 - Hướng dẫn quản trị
 - Video tutorial
-- FAQ 
+- FAQ
+
+## 💡 Tips
+
+1. Quản lý hệ thống
+- Backup dữ liệu thường xuyên
+- Cập nhật phần mềm định kỳ
+- Đào tạo người dùng
+
+2. Tối ưu quy trình
+- Tự động hóa tác vụ
+- Chuẩn hóa quy trình
+- Thu thập feedback 

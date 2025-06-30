@@ -11,15 +11,37 @@
 
 ## 👥 Đối tượng người dùng
 
-| 👩‍🏫 Giảng viên | 🎓 Sinh viên | 💼 Nhà trường |
-|----------------|-------------|-------------------|
-| Phát hành và xác minh chứng chỉ | Lưu trữ & chia sẻ hồ sơ bất biến | Đảm bảo chất lượng học thuật, kết nối liên trường |
+| 👩‍🏫 Giảng viên | 🎓 Sinh viên | 💼 Nhà trường | 🏢 Nhà tuyển dụng |
+|----------------|-------------|-------------------|-------------------|
+| Phát hành và xác minh chứng chỉ | Lưu trữ & chia sẻ hồ sơ bất biến | Đảm bảo chất lượng học thuật | Xác thực & đánh giá ứng viên |
+
+### Demo Accounts
+
+**ADMIN:**
+- Email: admin@gmail.com
+- Password: 123456
+
+**STUDENT:**
+- Email: anh.nm220001@dtu.edu.vn
+- Password: 123456
+
+**SCHOOL:**
+- Email: admin@dtu.edu.vn
+- Password: 123456
+
+**LECTURER:**
+- Email: nguyenquoclong@dtu.edu.vn
+- Password: 123456
+
+**BUSINESS:**
+- Email: hr@fpt.com.vn
+- Password: 123456
 
 ## 🏗️ Kiến trúc hệ thống
 
 ### Frontend
 - Vue 3, Bootstrap 5
-- SPA interface cho 3 loại người dùng
+- SPA interface cho 4 loại người dùng
 - Phản hồi nhanh, đa thiết bị
 
 ### Web3 Gateway

@@ -2,111 +2,118 @@
 
 ## 👋 Giới thiệu
 
-Chào mừng bạn đến với EduTraceBridge! Hướng dẫn này sẽ giúp bạn:
-- Tạo và quản lý đề thi
-- Chấm điểm và phúc khảo
-- Theo dõi tiến độ học tập của sinh viên
+Chào mừng bạn đến với EduBridgeTrace! Hướng dẫn này sẽ giúp bạn:
+- Phát hành và xác minh chứng chỉ trên blockchain
+- Quản lý kết quả học tập của sinh viên
+- Xác nhận thành tích và kỹ năng
 
-## 🔑 Đăng nhập và Cài đặt
+## 🔑 Tài khoản Demo
 
-### 1. Cài đặt MetaMask
-- Tải và cài đặt MetaMask extension
-- Tạo ví hoặc import ví hiện có
-- Thêm Polygon Mumbai testnet
+### Tài khoản 1
+- Email: nguyenquoclong@dtu.edu.vn
+- Password: 123456
 
-### 2. Đăng nhập hệ thống
-- Truy cập: https://app.edutracebridge.com
-- Click "Đăng nhập với MetaMask"
-- Xác nhận kết nối ví
+### Tài khoản 2
+- Email: lehoangnam@hust.edu.vn
+- Password: 123456
 
-## 📝 Quản lý đề thi
+## 🚀 Bắt đầu sử dụng
 
-### 1. Tạo đề thi mới
-- Vào mục "Quản lý đề thi"
-- Click "Tạo đề thi mới"
-- Điền thông tin:
-  - Tên đề thi
-  - Môn học
-  - Thời gian làm bài
-  - Điểm tối đa
-  - File đề thi
-- Xác nhận tạo NFT trên blockchain
+### 1. Đăng nhập hệ thống
+- Truy cập: https://vietchain.dzfullstack.edu.vn
+- Đăng nhập với tài khoản trường cấp
+- Kết nối ví MetaMask
 
-### 2. Chỉnh sửa đề thi
-- Chọn đề thi cần sửa
-- Click "Chỉnh sửa"
-- Cập nhật thông tin
-- Lưu thay đổi
+### 2. Thiết lập ví MetaMask
+- Cài đặt MetaMask extension
+- Tạo hoặc import ví
+- Kết nối với Polygon Mumbai testnet
 
-### 3. Công bố đề thi
-- Chọn đề thi
-- Click "Công bố"
+## 📝 Quản lý chứng chỉ
+
+### 1. Phát hành chứng chỉ NFT
+- Chọn mẫu chứng chỉ
+- Nhập thông tin sinh viên
 - Xác nhận trên blockchain
+- Theo dõi trạng thái phát hành
 
-## 📊 Chấm điểm
+### 2. Xác minh chứng chỉ
+- Quét mã QR hoặc nhập mã
+- Kiểm tra tính xác thực
+- Xem lịch sử chứng chỉ
 
-### 1. Xem bài nộp
-- Vào mục "Bài nộp"
-- Lọc theo môn học/kỳ thi
-- Xem danh sách bài nộp
+### 3. Quản lý template
+- Tạo mẫu chứng chỉ mới
+- Tùy chỉnh thông tin hiển thị
+- Lưu trữ trên IPFS
 
-### 2. Chấm điểm
-- Chọn bài cần chấm
-- Nhập điểm và nhận xét
-- Xác nhận điểm trên blockchain
+## 📊 Quản lý kết quả học tập
 
-### 3. Xuất điểm
-- Chọn lớp/môn học
-- Click "Xuất điểm"
-- Chọn định dạng file
+### 1. Nhập điểm và đánh giá
+- Nhập điểm số chi tiết
+- Thêm nhận xét đánh giá
+- Xác nhận kết quả cuối cùng
 
-## 📋 Phúc khảo
+### 2. Xem tiến độ lớp học
+- Thống kê điểm số
+- Theo dõi hoàn thành môn học
+- Xuất báo cáo tổng hợp
 
-### 1. Xem yêu cầu phúc khảo
-- Vào mục "Phúc khảo"
-- Xem danh sách yêu cầu
-- Kiểm tra chi tiết
+### 3. Phê duyệt yêu cầu
+- Xem yêu cầu xác nhận kỹ năng
+- Đánh giá portfolio
+- Phê duyệt/từ chối yêu cầu
 
-### 2. Xử lý phúc khảo
-- Chọn yêu cầu cần xử lý
-- Chấm lại bài thi
-- Cập nhật điểm (nếu cần)
-- Ghi nhận kết quả
+## 🔍 Xác thực thông tin
 
-## 📊 Thống kê
+### 1. Xác minh kỹ năng
+- Đánh giá năng lực thực tế
+- Ghi nhận trên blockchain
+- Cập nhật hồ sơ sinh viên
 
-### 1. Thống kê lớp học
-- Xem điểm trung bình
-- Phân bố điểm
-- Tỷ lệ đậu/rớt
-
-### 2. Báo cáo
-- Tạo báo cáo tổng hợp
-- Xuất báo cáo PDF
-- Chia sẻ với bộ môn
-
-## 🔔 Thông báo
-
-- Bật thông báo để nhận:
-  - Bài nộp mới
-  - Yêu cầu phúc khảo
-  - Deadline chấm bài
-  - Thông báo từ nhà trường
-
-## 🤝 Hỗ trợ
-
-### Liên hệ
-- Email: support@edutracebridge.com
-- Hotline: 1900-xxxx
-- Live chat trên website
-
-### FAQ
-- Xem câu hỏi thường gặp
-- Hướng dẫn video
-- Tài liệu hướng dẫn chi tiết
+### 2. Xác nhận kinh nghiệm
+- Xác thực dự án đã làm
+- Đánh giá mức độ tham gia
+- Lưu trữ bằng chứng
 
 ## 📱 Mobile App
 
 - Tải app từ App Store/Google Play
 - Đăng nhập với tài khoản hiện có
-- Chấm bài và quản lý trên mobile 
+- Phát hành và xác minh chứng chỉ
+
+## 🔐 Bảo mật
+
+### Quản lý private key
+- Bảo vệ private key
+- Backup ví MetaMask
+- Không chia sẻ thông tin nhạy cảm
+
+### Quyền hạn
+- Phân quyền theo môn học
+- Giới hạn thời gian truy cập
+- Audit log hoạt động
+
+## 🤝 Hỗ trợ
+
+### Liên hệ
+- Email: nguyenquoclongdng@gmail.com
+- Hotline: 0708585120
+- Live chat trên website
+
+### FAQ
+- Xem câu hỏi thường gặp
+- Video hướng dẫn
+- Tài liệu chi tiết
+
+## 💡 Tips
+
+1. Phát hành chứng chỉ
+- Kiểm tra kỹ thông tin
+- Sử dụng template chuẩn
+- Lưu trữ metadata đầy đủ
+
+2. Xác minh thông tin
+- Thu thập đủ bằng chứng
+- Ghi chú chi tiết đánh giá
+- Lưu trữ tài liệu liên quan 

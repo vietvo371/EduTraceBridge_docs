@@ -2,86 +2,100 @@
 
 ## 👋 Giới thiệu
 
-Chào mừng bạn đến với EduTraceBridge! Hướng dẫn này sẽ giúp bạn tìm hiểu cách sử dụng hệ thống để:
-- Tham gia các bài thi
-- Xem kết quả và yêu cầu phúc khảo
-- Quản lý chứng chỉ NFT của bạn
+Chào mừng bạn đến với EduBridgeTrace! Hướng dẫn này sẽ giúp bạn:
+- Quản lý hồ sơ học tập trên blockchain
+- Xem và chia sẻ chứng chỉ NFT
+- Tạo hồ sơ xin việc được xác thực
 
-## 🔑 Đăng nhập và Cài đặt
+## 🔑 Tài khoản Demo
 
-### 1. Cài đặt MetaMask
-- Tải và cài đặt MetaMask extension
-- Tạo ví hoặc import ví hiện có
-- Thêm Polygon Mumbai testnet
+### Tài khoản 1
+- Email: anh.nm220001@dtu.edu.vn
+- Password: 123456
 
-### 2. Đăng nhập hệ thống
-- Truy cập: https://app.edutracebridge.com
-- Click "Đăng nhập với MetaMask"
-- Xác nhận kết nối ví
+### Tài khoản 2
+- Email: binh.tv220002@sis.hust.edu.vn
+- Password: 123456
 
-## 📝 Tham gia thi
+## 🚀 Bắt đầu sử dụng
 
-### 1. Xem danh sách bài thi
-- Vào mục "Danh sách bài thi"
-- Lọc theo môn học/kỳ thi
-- Xem thông tin chi tiết bài thi
+### 1. Đăng nhập hệ thống
+- Truy cập: https://vietchain.dzfullstack.edu.vn
+- Đăng nhập với tài khoản trường cấp
+- Kết nối ví MetaMask
 
-### 2. Làm bài thi
-- Click "Bắt đầu thi"
-- Làm bài trong thời gian quy định
-- Nộp bài và xác nhận trên blockchain
+### 2. Thiết lập ví MetaMask
+- Cài đặt MetaMask extension
+- Tạo hoặc import ví
+- Kết nối với Polygon Mumbai testnet
 
-### 3. Xem kết quả
-- Vào mục "Kết quả thi"
-- Xem điểm số và nhận xét
-- Tải bài làm và đáp án
+## 📚 Quản lý học tập
 
-## 📋 Phúc khảo
+### 1. Xem kết quả học tập
+- Danh sách môn học đã hoàn thành
+- Điểm số và đánh giá
+- Chứng chỉ NFT đã nhận
 
-### 1. Yêu cầu phúc khảo
-- Click "Yêu cầu phúc khảo"
-- Điền lý do và minh chứng
-- Xác nhận yêu cầu
+### 2. Nhận chứng chỉ NFT
+- Xác nhận hoàn thành môn học
+- Nhận chứng chỉ vào ví
+- Xem chi tiết trên blockchain
 
-### 2. Theo dõi tiến trình
-- Xem trạng thái phúc khảo
-- Nhận thông báo kết quả
-- Xem kết quả sau phúc khảo
-
-## 🎓 Quản lý chứng chỉ
-
-### 1. Xem chứng chỉ
-- Vào mục "Chứng chỉ của tôi"
-- Xem danh sách chứng chỉ NFT
-- Kiểm tra thông tin chi tiết
-
-### 2. Chia sẻ chứng chỉ
-- Tạo link chia sẻ
-- Xuất chứng chỉ PDF
+### 3. Chia sẻ thành tích
+- Tạo link chia sẻ công khai
+- Xuất chứng chỉ PDF có QR code
 - Chia sẻ với nhà tuyển dụng
 
-## 🔔 Thông báo
+## 💼 Hồ sơ xin việc
 
-- Bật thông báo để nhận:
-  - Lịch thi mới
-  - Kết quả thi
-  - Kết quả phúc khảo
-  - Chứng chỉ mới
+### 1. Tạo hồ sơ blockchain
+- Upload thông tin cá nhân
+- Chọn chứng chỉ muốn hiển thị
+- Tạo link hồ sơ công khai
+
+### 2. Quản lý quyền truy cập
+- Cấp quyền cho nhà tuyển dụng
+- Theo dõi lượt xem hồ sơ
+- Quản lý thời hạn truy cập
 
 ## 📱 Mobile App
 
 - Tải app từ App Store/Google Play
 - Đăng nhập với tài khoản hiện có
-- Sync dữ liệu với web version
+- Xem chứng chỉ và chia sẻ
+
+## 🔐 Bảo mật
+
+### Quản lý private key
+- Bảo vệ private key
+- Backup ví MetaMask
+- Không chia sẻ thông tin nhạy cảm
+
+### Quyền riêng tư
+- Kiểm soát thông tin hiển thị
+- Mã hóa dữ liệu cá nhân
+- Theo dõi lịch sử truy cập
 
 ## 🤝 Hỗ trợ
 
 ### Liên hệ
-- Email: support@edutracebridge.com
-- Hotline: 1900-xxxx
+- Email: nguyenquoclongdng@gmail.com
+- Hotline: 0708585120
 - Live chat trên website
 
 ### FAQ
 - Xem câu hỏi thường gặp
-- Hướng dẫn video
-- Tài liệu hướng dẫn chi tiết 
+- Video hướng dẫn
+- Tài liệu chi tiết
+
+## 💡 Tips
+
+1. Bảo mật
+- Sử dụng mật khẩu mạnh
+- Bật xác thực 2 yếu tố
+- Thường xuyên backup ví
+
+2. Chia sẻ thông tin
+- Chỉ chia sẻ với nguồn đáng tin cậy
+- Kiểm tra quyền truy cập
+- Giới hạn thời gian chia sẻ 

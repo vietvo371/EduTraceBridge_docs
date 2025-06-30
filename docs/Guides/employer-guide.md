@@ -2,101 +2,97 @@
 
 ## 👋 Giới thiệu
 
-Chào mừng bạn đến với EduTraceBridge! Hướng dẫn này sẽ giúp bạn:
-- Xác thực văn bằng, chứng chỉ
+Chào mừng bạn đến với EduBridgeTrace! Hướng dẫn này sẽ giúp bạn:
+- Xác thực văn bằng và chứng chỉ
+- Đánh giá hồ sơ ứng viên
 - Truy xuất lịch sử học tập
-- Đánh giá năng lực ứng viên
 
-## 🔑 Bắt đầu sử dụng
+## 🔑 Tài khoản Demo
+
+### Tài khoản 1
+- Email: hr@fpt.com.vn
+- Password: 123456
+
+### Tài khoản 2
+- Email: tuyen.dung@viettel.com.vn
+- Password: 123456
+
+## 🚀 Bắt đầu sử dụng
 
 ### 1. Đăng ký tài khoản
-- Truy cập: https://app.edutracebridge.com
-- Click "Đăng ký doanh nghiệp"
-- Điền thông tin công ty
-- Xác thực email
+- Truy cập: https://vietchain.dzfullstack.edu.vn
+- Đăng ký tài khoản doanh nghiệp
+- Xác minh thông tin công ty
+- Kết nối ví MetaMask
 
-### 2. Cài đặt MetaMask
-- Tải và cài đặt MetaMask extension
-- Kết nối ví với hệ thống
-- Thêm Polygon Mumbai testnet
+### 2. Thiết lập hệ thống
+- Cài đặt MetaMask extension
+- Kết nối với Polygon Mumbai
+- Cấu hình API tích hợp
 
 ## 🔍 Xác thực văn bằng
 
-### 1. Quét mã QR
+### 1. Xác thực trực tiếp
 - Quét mã QR trên văn bằng
-- Xem thông tin trên blockchain
-- Kiểm tra tính xác thực
+- Kiểm tra trên blockchain
+- Xem lịch sử thay đổi
 
-### 2. Nhập mã chứng chỉ
-- Nhập mã số chứng chỉ
-- Kiểm tra thông tin
-- Xác nhận tính hợp lệ
+### 2. Xác thực qua API
+- Tích hợp API xác thực
+- Tự động hóa quy trình
+- Lưu trữ kết quả
 
-### 3. Xem chi tiết
-- Thông tin sinh viên
-- Kết quả học tập
-- Lịch sử cấp chứng chỉ
+### 3. Báo cáo gian lận
+- Phát hiện bất thường
+- Gửi báo cáo chi tiết
+- Theo dõi xử lý
 
-## 📋 Truy xuất hồ sơ
+## 📋 Đánh giá ứng viên
 
-### 1. Tìm kiếm ứng viên
-- Tìm theo mã sinh viên
-- Tìm theo tên
-- Lọc theo trường/ngành
+### 1. Xem hồ sơ blockchain
+- Truy cập thông tin học tập
+- Xem chứng chỉ và kỹ năng
+- Đánh giá tiến độ
 
-### 2. Xem lịch sử học tập
-- Danh sách môn học
-- Điểm số chi tiết
-- Các chứng chỉ đã đạt
+### 2. Phân tích năng lực
+- So sánh với yêu cầu
+- Đánh giá điểm mạnh/yếu
+- Ghi chú đánh giá
 
-### 3. Xuất báo cáo
-- Tạo báo cáo PDF
-- Xuất dữ liệu CSV
-- Lưu hồ sơ
+### 3. Yêu cầu xác minh
+- Gửi yêu cầu tới trường
+- Xác minh thông tin bổ sung
+- Nhận kết quả xác thực
 
-## 📊 Đánh giá năng lực
+## 📊 Báo cáo & Thống kê
 
-### 1. Phân tích kết quả
-- So sánh điểm số
-- Đánh giá xu hướng
-- Xem thống kê
+### 1. Báo cáo tuyển dụng
+- Thống kê hồ sơ đã xem
+- Phân tích xu hướng
+- Xuất báo cáo PDF
 
-### 2. Bộ lọc tìm kiếm
-- Lọc theo điểm số
-- Lọc theo kỹ năng
-- Lọc theo chứng chỉ
+### 2. Phân tích dữ liệu
+- So sánh ứng viên
+- Đánh giá nguồn trường
+- Dự báo nhu cầu
 
 ## 🔐 Bảo mật
 
-### 1. Quản lý quyền truy cập
+### Quản lý quyền truy cập
 - Phân quyền người dùng
-- Giới hạn truy cập
+- Giới hạn thời gian
 - Audit logs
 
-### 2. Bảo vệ dữ liệu
+### Bảo vệ dữ liệu
 - Mã hóa thông tin
-- Kiểm soát chia sẻ
-- Backup dữ liệu
-
-## 📱 Mobile App
-
-- Tải app từ App Store/Google Play
-- Đăng nhập với tài khoản hiện có
-- Xác thực văn bằng qua mobile
-
-## 🔔 Thông báo
-
-- Cấu hình thông báo:
-  - Cập nhật hồ sơ
-  - Chứng chỉ mới
-  - Thông báo hệ thống
-  - Cảnh báo bảo mật
+- Lưu trữ an toàn
+- Xóa dữ liệu định kỳ
 
 ## 🤝 Hỗ trợ
 
 ### Liên hệ
-- Email: support@edutracebridge.com
-- Hotline: 1900-xxxx
+- Email: nguyenquoclongdng@gmail.com
+- Hotline: 0708585120
 - Live chat trên website
 
 ### Tài liệu
@@ -106,12 +102,12 @@ Chào mừng bạn đến với EduTraceBridge! Hướng dẫn này sẽ giúp b
 
 ## 💡 Tips
 
-1. Sử dụng API
-- Tích hợp với hệ thống HR
-- Tự động xác thực
-- Đồng bộ dữ liệu
+1. Xác thực hiệu quả
+- Sử dụng batch verification
+- Tự động hóa quy trình
+- Lưu trữ kết quả
 
-2. Tối ưu quy trình
-- Template báo cáo
-- Quy trình xác thực
-- Quản lý hồ sơ 
+2. Đánh giá toàn diện
+- Kết hợp nhiều nguồn
+- Xác minh chéo
+- Ghi chú chi tiết 
