@@ -1,0 +1,30 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #1e63b4; /* Màu xanh dương chính */
+  --ifm-color-primary-dark: #1a58a1; /* Màu xanh dương đậm */
+  --ifm-color-primary-darker: #184e91; /* Màu xanh dương tối hơn */
+  --ifm-color-primary-darkest: #153f78; /* Màu xanh dương tối nhất */
+  --ifm-color-primary-light: #1f75b7; /* Màu xanh dương sáng */
+  --ifm-color-primary-lighter: #4a90d1; /* Màu xanh dương sáng hơn */
+  --ifm-color-primary-lightest: #6da7e6; /* Màu xanh dương rất sáng */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #4d8fe6; /* Màu xanh dương sáng hơn trong chế độ tối */
+  --ifm-color-primary-dark: #3f7fd1; /* Màu xanh dương đậm trong chế độ tối */
+  --ifm-color-primary-darker: #3567b0; /* Màu xanh dương tối hơn trong chế độ tối */
+  --ifm-color-primary-darkest: #2f5591; /* Màu xanh dương tối nhất trong chế độ tối */
+  --ifm-color-primary-light: #5f99e1; /* Màu xanh dương sáng trong chế độ tối */
+  --ifm-color-primary-lighter: #81aee3; /* Màu xanh dương sáng hơn trong chế độ tối */
+  --ifm-color-primary-lightest: #a0c7e7; /* Màu xanh dương rất sáng trong chế độ tối */
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
