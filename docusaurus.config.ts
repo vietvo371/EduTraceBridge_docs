@@ -10,7 +10,7 @@ const config: Config = {
   baseUrl: '/EduTraceBridge_docs/',
   organizationName: 'vietvo371',
   projectName: 'EduTraceBridge_docs',
-  trailingSlash: false,
+  trailingSlash: true,
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   deploymentBranch: 'gh-pages',
@@ -24,7 +24,8 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://gitlab.com/ThanhTruong2311/blockchain_dtudz/edit/main/',
+          routeBasePath: '/',
+          editUrl: 'https://github.com/vietvo371/EduTraceBridge_docs/edit/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -34,6 +35,7 @@ const config: Config = {
   ],
 
   themeConfig: {
+    metadata: [{name: 'keywords', content: 'blockchain, education, verification'}],
     image: 'img/EduTraceBridge.png',
     navbar: {
       title: 'EduTraceBridge',
@@ -43,14 +45,20 @@ const config: Config = {
       },
       items: [
         {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Documentation',
+        },
+        {
           type: 'localeDropdown',
           position: 'right',
         },
         {
-          href: 'https://gitlab.com/ThanhTruong2311/blockchain_dtudz',
+          href: 'https://github.com/vietvo371/EduTraceBridge_docs',
           position: 'right',
-          className: 'header-gitlab-link',
-          'aria-label': 'GitLab repository',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
         },
       ],
     },
@@ -62,15 +70,15 @@ const config: Config = {
           items: [
             {
               label: 'Getting Started',
-              to: '/docs/intro',
+              to: '/intro',
             },
             {
               label: 'Architecture',
-              to: '/docs/Architecture',
+              to: '/Architecture',
             },
             {
               label: 'Installation',
-              to: '/docs/Installation',
+              to: '/Installation',
             },
           ],
         },
@@ -78,12 +86,12 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'GitLab',
-              href: 'https://gitlab.com/ThanhTruong2311/blockchain_dtudz',
+              label: 'GitHub',
+              href: 'https://github.com/vietvo371/EduTraceBridge_docs',
             },
             {
               label: 'Issues',
-              href: 'https://gitlab.com/ThanhTruong2311/blockchain_dtudz/-/issues',
+              href: 'https://github.com/vietvo371/EduTraceBridge_docs/issues',
             },
           ],
         },
