@@ -3,13 +3,13 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'EduBridgeTrace',
+  title: 'EduTraceBridge',
   tagline: 'Blockchain-based Education Verification Platform',
   favicon: 'img/favicon.ico',
   url: 'https://vietvo371.github.io',
-  baseUrl: '/EduBridgeTrace_docs/',
+  baseUrl: '/EduTraceBridge_docs/',
   organizationName: 'vietvo371',
-  projectName: 'EduBridgeTrace_docs',
+  projectName: 'EduTraceBridge_docs',
   trailingSlash: true,
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -25,7 +25,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/',
-          editUrl: 'https://github.com/vietvo371/EduBridgeTrace_docs/edit/main/',
+          editUrl: 'https://github.com/vietvo371/EduTraceBridge_docs/edit/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -55,7 +55,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://github.com/vietvo371/EduBridgeTrace_docs',
+          href: 'https://github.com/vietvo371/EduTraceBridge_docs',
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub repository',
@@ -87,11 +87,11 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/vietvo371/EduBridgeTrace_docs',
+              href: 'https://github.com/vietvo371/EduTraceBridge_docs',
             },
             {
               label: 'Issues',
-              href: 'https://github.com/vietvo371/EduBridgeTrace_docs/issues',
+              href: 'https://github.com/vietvo371/EduTraceBridge_docs/issues',
             },
           ],
         },
