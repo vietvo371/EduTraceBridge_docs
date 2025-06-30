@@ -11,6 +11,20 @@
 | **Axios**    | 1.8.2                |
 | **Vite**     | 6.2.4                |
 
+## 🏗️ System Architecture
+
+| Layer | Main Technologies | Role | Highlights |
+|-------|-------------------|------|-----------|
+| **Frontend** | Vue 3, Bootstrap 5 | SPA interface for 4 user types | Fast response, multi-device |
+| **Web3 Gateway** | `web3.js` / `ethers.js` + MetaMask | Sign & send transactions, read blockchain | Familiar UX, private key security |
+| **Cache** | AWS ElastiCache (Redis) | Key-value store, pub/sub | Speeds up queries, session storage |
+| **Backend (Containers)** |Laravel | API REST/GraphQL, nghiệp vụ, queue workers | Apache / Nginx |
+| **Database** | AWS RDS (MySQL 8) | Relational data (users, courses, recruitment) | Automated backup, Multi-AZ |
+| **Object Storage** | AWS S3 | Static frontend files, CVs, media | IAM security, versioning |
+| **Smart Contracts** | Solidity + OpenZeppelin | NFT-degree, utility token | Deployed on Ethereum & Testnet |
+| **Distributed Storage** | IPFS + Pinata | Store degree metadata, large files | Immutable hash, free CDN gateway |
+| **Long-term Storage** | Filecoin | Storage deal for "hot" data | Durability commitment, low cost |
+
 ## 🚀 Cài đặt
 
 ### 🌐 Production
@@ -37,7 +51,7 @@ npm i
 php artisan migrate
 php artisan db:seed
 npm run watch
-php artisan server
+php artisan serve
 ```
 
 ## 👥 Tài khoản Demo
@@ -89,13 +103,13 @@ php artisan server
 ## 🔍 Kiểm tra cài đặt
 
 ### 1. Frontend
-- Truy cập: http://localhost:3000
+- Truy cập: https://vietchain.dzfullstack.edu.vn
 - Kiểm tra kết nối MetaMask
 - Test đăng nhập/đăng ký
 
 ### 2. Backend
-- Health check: http://localhost:8000/health
-- Swagger docs: http://localhost:8000/api-docs
+- Health check: https://api.vietchain.dzfullstack.edu.vn/health
+- Swagger docs: https://api.vietchain.dzfullstack.edu.vn/api-docs
 - Test API endpoints
 
 ### 3. Database
@@ -145,57 +159,33 @@ git push origin feat/my-awesome-feature
 - ✅ Ensure code passes all CI/CD checks
 - ✅ Update documentation if needed
 
+## 📞 Liên hệ
+
+### Team Members
+| Role      | Name                    | Email                                                                 |
+| --------- | ----------------------- | --------------------------------------------------------------------- |
+| Leader    | **Nguyễn Quốc Long**     | [quoclongdng@gmail.com](mailto:quoclongdng@gmail.com)                 |
+| Developer | **Lê Thanh Trường**      | [thanhtruong23111999@gmail.com](mailto:thanhtruong23111999@gmail.com) |
+| Developer | **Võ Văn Việt**          | [vietvo371@gmail.com](mailto:vietvo371@gmail.com)                     |
+| Developer | **Nguyễn Văn Nhân**      | [vannhan130504@gmail.com](mailto:vannhan130504@gmail.com)             |
+| Developer | **Nguyễn Ngọc Duy Thái** | [kkdn011@gmail.com](mailto:kkdn011@gmail.com)                         |
+
+### Support
+- Email: nguyenquoclongdng@gmail.com
+- Hotline: 0905523543
+- Live chat: https://vietchain.dzfullstack.edu.vn
+
 ## 📚 Tài liệu tham khảo
 
 - [Laravel Documentation](https://laravel.com/docs)
 - [Vue.js Documentation](https://vuejs.org/)
 - [MetaMask Documentation](https://docs.metamask.io/)
 - [IPFS Documentation](https://docs.ipfs.tech/)
+- [Polygon Documentation](https://polygon.technology/)
+- [OpenZeppelin Documentation](https://docs.openzeppelin.com/)
 
-## 💡Nhà phát triển
+## 📝 License
 
-- 📧 Email: thanhtruong23111999@gmail.com
+Released under the MIT License – see LICENSE file for details.
 
-- 📱 Hotline: 0376 659 652
-
-*" 🏫 DTU_DZ - DUY TAN UNIVERSITY - SCS ✨"*
-
-## 📞 Liên hệ
-- Lê Thanh Trường       :  <u>thanhtruong23111999@gmail.com</u>
-- Võ Văn Việt           :  <u>vietvo371@gmail.com</u>
-- Nguyễn Ngọc Duy Thái  :  <u>kkdn011@gmail.com</u>
-
-## 📚 Tài liệu
-- [Hướng dẫn cài đặt](https://github.com/Truongpyeo/DTURelifeLink/blob/master/docs/setup.md)
-
-## 🔄 Quy trình phát triển
-1. Fork repo này
-2. Tạo branch mới (`git checkout -b feature/AmazingFeature`)
-3. Commit thay đổi (`git commit -m 'Add some AmazingFeature'`)
-4. Push lên branch (`git push origin feature/AmazingFeature`) 
-5. Tạo Pull Request
-
-## 🐛 Báo lỗi
-Nếu bạn phát hiện lỗi, vui lòng tạo issue mới với:
-- Mô tả chi tiết lỗi
-- Các bước tái hiện
-- Screenshots nếu có
-- Môi trường (browser, OS...)
-
-## 📜 Changelog
-Xem [CHANGELOG](https://github.com/NguyenThai11103/DTU-Relieflink-documents/blob/main/CHANGELOG.md) để biết lịch sử thay đổi.
-
-## ⚖️ Code of Conduct
-Xem [CODE_OF_CONDUCT](https://github.com/NguyenThai11103/DTU-Relieflink-documents/blob/main/CODE_OF_CONDUCT.md) để biết các quy tắc và hành vi được chấp nhận.
-
-## Báo cáo lỗi & Góp ý
-- Issues: [GitHub Issues](https://github.com/Truongpyeo/DTURelifeLink/issues)
-- Security: Đối với các vấn đề bảo mật nhạy cảm, vui lòng liên hệ trực tiếp qua email: <u>thanhtruong23111999@gmail.com</u>
-
-
-### 📝 License
-Dự án được phân phối dưới giấy phép [MIT License](https://github.com/NguyenThai11103/DTU-Relieflink-documents/blob/main/LICENSE
-)
-
-
-*"Được phát triển với ❤️ bởi Nhóm DTU-DZ"*
+© 2025 EduBridgeTrace – Build trust, unlock opportunity.
