@@ -2,7 +2,7 @@
 
 ## 📝 Overview
 
-EduTraceBridge sử dụng ba smart contract chính để quản lý đề thi, kết quả và chứng chỉ trên blockchain:
+EduBridgeTrace sử dụng ba smart contract chính để quản lý đề thi, kết quả và chứng chỉ trên blockchain:
 
 1. ExamNFT
 2. ResultHash

@@ -1,4 +1,5 @@
 # Tổng quan về EduBridgeTrace
+![Banner](../static/img/banner.jpg)
 
 > *"Connect – Authenticate – Empower"*
 

@@ -2,7 +2,7 @@
 
 ## 📊 Overview
 
-EduTraceBridge sử dụng MongoDB làm cơ sở dữ liệu chính để lưu trữ thông tin off-chain. Dữ liệu được tổ chức theo các collection sau:
+EduBridgeTrace sử dụng MongoDB làm cơ sở dữ liệu chính để lưu trữ thông tin off-chain. Dữ liệu được tổ chức theo các collection sau:
 
 ## 👥 Users Collection
 

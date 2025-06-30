@@ -3,13 +3,13 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'EduTraceBridge',
+  title: 'EduBridgeTrace',
   tagline: 'Blockchain-based Education Verification Platform',
   favicon: 'img/favicon.ico',
   url: 'https://vietvo371.github.io',
-  baseUrl: '/EduTraceBridge_docs/',
+  baseUrl: '/EduBridgeTrace_docs/',
   organizationName: 'vietvo371',
-  projectName: 'EduTraceBridge_docs',
+  projectName: 'EduBridgeTrace_docs',
   trailingSlash: true,
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -25,7 +25,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/',
-          editUrl: 'https://github.com/vietvo371/EduTraceBridge_docs/edit/main/',
+          editUrl: 'https://github.com/vietvo371/EduBridgeTrace_docs/edit/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -36,12 +36,12 @@ const config: Config = {
 
   themeConfig: {
     metadata: [{name: 'keywords', content: 'blockchain, education, verification'}],
-    image: 'img/EduTraceBridge.png',
+    image: 'img/EduBridgeTrace.png',
     navbar: {
-      title: 'EduTraceBridge',
+      title: 'EduBridgeTrace',
       logo: {
-        alt: 'EduTraceBridge Logo',
-        src: 'img/EduTraceBridge.png',
+        alt: 'EduBridgeTrace Logo',
+        src: 'img/EduBridgeTrace.png',
       },
       items: [
         {
@@ -55,7 +55,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://github.com/vietvo371/EduTraceBridge_docs',
+          href: 'https://github.com/vietvo371/EduBridgeTrace_docs',
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub repository',
@@ -87,11 +87,11 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/vietvo371/EduTraceBridge_docs',
+              href: 'https://github.com/vietvo371/EduBridgeTrace_docs',
             },
             {
               label: 'Issues',
-              href: 'https://github.com/vietvo371/EduTraceBridge_docs/issues',
+              href: 'https://github.com/vietvo371/EduBridgeTrace_docs/issues',
             },
           ],
         },
@@ -113,7 +113,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} EduTraceBridge. Built with ❤️ by DTU-DZ Team.`,
+      copyright: `Copyright © ${new Date().getFullYear()} EduBridgeTrace. Built with ❤️ by DTU-DZ Team.`,
     },
     prism: {
       theme: prismThemes.github,

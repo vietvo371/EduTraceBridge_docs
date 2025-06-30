@@ -98,7 +98,7 @@ Chào mừng bạn đến với EduBridgeTrace! Hướng dẫn này sẽ giúp b
 
 ### Liên hệ
 - Email: nguyenquoclongdng@gmail.com
-- Hotline: 0708585120
+- Hotline: 0905523543
 - Live chat trên website
 
 ### FAQ
